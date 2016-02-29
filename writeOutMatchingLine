@@ -1,0 +1,3 @@
+ cat political_buttons.csv | grep -E 'PB_1346.*' >> politicalButtonFaves.csv
+# extract the entire line of a file that inlcudes the matching string (extended regex)
+# and append the line to the "politicalButtonFaves.csv"
