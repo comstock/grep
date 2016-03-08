@@ -1,11 +1,13 @@
 # Looking for reports of "well-formed" files
-$ grep -o -e 'status.*true<\/well-formed' *xml
+grep -o -e 'status.*true<\/well-formed' *xml
 
 # Looking for reports of "valid files
-$ grep -o -e 'status.*true<\/valid' *xml
+grep -o -e 'status.*true<\/valid' *xml
 
 #Looking to list any files that do not include the searched-for text string
-$ grep --files-without-match -e 'status.*true<\/valid' *xml
+grep --files-without-match -e 'status.*true<\/valid' *xml
+# OR
+grep --files-without-match -e 'status.*true<\/valid' *xml; grep --files-without-match -e 'status.*true<\/well-formed' *xml
 
 #Looking to list any files that DO INCLUDE the searched-for text string
-$ grep --files-with-matches -e 'status.*true<\/valid' *xml
+grep --files-with-matches -e 'status.*true<\/valid' *xml
