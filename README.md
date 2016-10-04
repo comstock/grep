@@ -4,7 +4,7 @@
 
 ### awk scripts for image-only deposit reports
 
-    awk /xml/ {print "http://nrs.harvard.edu/"$2} Batch052365047367421786808.txt
+    awk /xml/ {print "http://nrs.harvard.edu/"$2} Fabien_B6167982090676897383.txt
 
 ### awk scripts for PDS deposit reports
 
