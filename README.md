@@ -1,12 +1,15 @@
-# grep & awk scripts
-
-## awk scripts for DRS deposit reports
+# awk scripts for DRS deposit reports
 
 ### awk scripts for image-only deposit reports
 
-    awk /xml/ {print "http://nrs.harvard.edu/"$2} Fabien_B6167982090676897383.txt
+    # following returns URN links only
+    awk '/JP2/ {print "http://nrs.harvard.edu/"$11}' Fabien_B6167982090676897383.txt
+
+    # following returns OSN [tab] URN link
+    awk '/JP2/ {print $5"\thttp://nrs.harvard.edu/"$11}' Fabien_B6167982090676897383.txt
+
+    * Note: improve by adding -F '\t' flag to awk so that only tabs are regarded as column seperators.
 
 ### awk scripts for PDS deposit reports
 
-    awk /JP2/ {print "http://nrs.harvard.edu/"$2"\t"$5} Batch052365047367421786808.txt
-
+    awk '/xml/ {print $6"\thttp://nrs.harvard.edu/"$2}' Batch052365047367421786808.txt
