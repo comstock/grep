@@ -19,7 +19,7 @@
 |column #   |heading   | 
 |---|---|
 | 1  | OBJ-ID  |
-| 2  | **OBJ-DELIV-URN**  |
+| **2**  | **OBJ-DELIV-URN**  |
 | 3  | OBJ-URN  |
 | 4  | DEPOSITOR  |
 | 5  | OBJ-OSN  |
@@ -28,7 +28,7 @@
 | 8  | OBJ-TYPE  |
 | 9  | OBJ-ROLES  |
 | 10  | FILE-ID  |
-| 11  | FILE-URN  |
+| **11**  | **FILE-URN**  |
 | 12  | FILE-FORMAT |
 | 13  | FILE-SIZE  |
 | 14  | FILE-FORMAT  |
