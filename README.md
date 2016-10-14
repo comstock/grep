@@ -3,12 +3,10 @@
 ### awk scripts for image-only deposit reports
 
     # following returns URN links only
-    awk '/JP2/ {print "http://nrs.harvard.edu/"$11}' Fabien_B6167982090676897383.txt
+    awk -F "\t" '/JP2/ {print "http://nrs.harvard.edu/"$11}' Fabien_B6167982090676897383.txt
 
     # following returns OSN [tab] URN link
-    awk '/JP2/ {print $5"\thttp://nrs.harvard.edu/"$11}' Fabien_B6167982090676897383.txt
-
-    * Note: improve by adding -F '\t' flag to awk so that only tabs are regarded as column seperators.
+    awk -F "\t" '/JP2/ {print $5"\thttp://nrs.harvard.edu/"$11}' Fabien_B6167982090676897383.txt
 
 ### awk scripts for PDS deposit reports
     # -F "\t" makes explicit that TAB is the column seperator and /xml/ only returns values for rows with XML (assume METS) files.
