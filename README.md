@@ -1,4 +1,4 @@
-# awk scripts for DRS deposit reports
+# awk scripts for DRS
 
 ### awk scripts for image-only deposit reports
 
