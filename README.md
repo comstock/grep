@@ -34,7 +34,7 @@
 | 14  | FILE-FORMAT  |
 | 15  | FILE-ORIGPATH  |
 
-## Searching DRS via CVS upload
+## Searching DRS via CSV upload
 Each column heading must be one or more of the following: (not tested)
 
 * file_id_num
