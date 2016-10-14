@@ -12,14 +12,14 @@
 
 ### awk scripts for PDS deposit reports
 
-    awk '/xml/ {print $6"\thttp://nrs.harvard.edu/"$2}' Batch052365047367421786808.txt
+    awk -F "\t" '/xml/ {print "\thttp://nrs.harvard.edu/"$2}' Batch052365047367421786808.txt
     
 ## DRS deposit confirmation report structure
 
 |column #   |heading   | 
 |---|---|
 | 1  | OBJ-ID  |
-| 2  | OBJ-DELIV-URN  |
+| 2  | **OBJ-DELIV-URN**  |
 | 3  | OBJ-URN  |
 | 4  | DEPOSITOR  |
 | 5  | OBJ-OSN  |
