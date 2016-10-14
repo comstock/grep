@@ -11,7 +11,7 @@
     * Note: improve by adding -F '\t' flag to awk so that only tabs are regarded as column seperators.
 
 ### awk scripts for PDS deposit reports
-
+    # -F "\t" makes explicit that TAB is the column seperator and /xml/ only returns values for rows with XML (assume METS) files.
     awk -F "\t" '/xml/ {print "\thttp://nrs.harvard.edu/"$2}' Batch052365047367421786808.txt
     
 ## DRS deposit confirmation report structure
